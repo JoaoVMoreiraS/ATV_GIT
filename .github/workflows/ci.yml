@@ -1,0 +1,22 @@
+name: CI Básico
+
+on:
+  push:
+      branches:
+              -master
+
+jobs: 
+    verificar-projetos:
+        runs-on: ununtu-lasteste
+
+        steps:
+            - name: baixar codigo
+              uses: actions/checkout@4
+
+            - name: verificar arquivos 
+              run:
+                echo "projeto recebido"
+                1s -1a
+
+            - name: finalizado
+              run: echo "pipeline execuntando com sucesso"
