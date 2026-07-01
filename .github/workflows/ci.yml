@@ -3,11 +3,11 @@ name: CI Básico
 on:
   push:
       branches:
-              -master
+              - master
 
 jobs: 
     verificar-projetos:
-        runs-on: ununtu-lasteste
+        runs-on: ununtu-latest
 
         steps:
             - name: baixar codigo
